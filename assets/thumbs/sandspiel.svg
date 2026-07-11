@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="ssbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#201812"/><stop offset="1" stop-color="#0d0a08"/></linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#ssbg)"/>
+  <!-- fire rising center -->
+  <path d="M150 260 C120 220 150 200 160 168 C174 205 196 220 172 262 Z" fill="#ff6a2c"/>
+  <path d="M154 258 C136 226 156 208 162 184 C172 212 186 226 170 258 Z" fill="#ff9838"/>
+  <path d="M158 256 C150 232 160 220 164 202 C172 224 176 236 166 256 Z" fill="#ffd24a"/>
+  <g fill="#ffb04a"><circle cx="140" cy="150" r="2.5"/><circle cx="182" cy="140" r="2"/><circle cx="168" cy="120" r="1.6"/></g>
+  <!-- sand pile left -->
+  <path d="M18 262 L70 196 L122 262 Z" fill="#d7ad63"/>
+  <path d="M52 220 L70 196 L88 220 L70 232 Z" fill="#e8c580"/>
+  <g fill="#e0b96e"><rect x="60" y="120" width="9" height="9" rx="2"/><rect x="74" y="150" width="9" height="9" rx="2"/><rect x="52" y="168" width="9" height="9" rx="2"/></g>
+  <!-- water pool right -->
+  <path d="M198 262 Q210 240 232 244 Q256 238 268 250 Q290 246 300 262 Z" fill="#2f7fc8"/>
+  <path d="M198 262 Q210 248 232 251 Q256 246 268 255 Q290 251 300 262 Z" fill="#4a9fe0" opacity=".55"/>
+  <g fill="#4a9fe0"><circle cx="250" cy="150" r="5"/><circle cx="272" cy="192" r="4"/></g>
+  <!-- plant sprig -->
+  <path d="M104 262 L104 214" stroke="#3fae54" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M104 228 Q86 220 82 204 Q100 206 104 224 Z" fill="#4ec46a"/>
+  <path d="M104 240 Q122 232 128 218 Q108 218 104 236 Z" fill="#4ec46a"/>
+  <!-- ground -->
+  <rect x="0" y="262" width="320" height="6" fill="#3a2c1e"/>
+</svg>

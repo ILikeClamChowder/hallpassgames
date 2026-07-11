@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs><linearGradient id="qwbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4a6a"/><stop offset="1" stop-color="#222d40"/></linearGradient></defs>
+  <rect width="320" height="320" fill="url(#qwbg)"/>
+  <!-- track -->
+  <rect x="0" y="228" width="320" height="92" fill="#b5482f"/>
+  <g stroke="#e6e0d4" stroke-width="3"><line x1="0" y1="244" x2="320" y2="244"/><line x1="0" y1="300" x2="320" y2="300"/></g>
+  <g stroke="#e6e0d4" stroke-width="2" opacity=".7"><line x1="60" y1="272" x2="60" y2="284"/><line x1="140" y1="272" x2="140" y2="284"/><line x1="220" y1="272" x2="220" y2="284"/><line x1="300" y1="272" x2="300" y2="284"/></g>
+  <!-- runner (awkward mid-stride ragdoll) -->
+  <circle cx="146" cy="138" r="14" fill="#f6ede8"/>
+  <g stroke="#f6ede8" stroke-width="9" stroke-linecap="round" fill="none">
+    <line x1="150" y1="150" x2="162" y2="200"/>
+    <path d="M154 164 L128 150"/>
+    <path d="M156 170 L186 156"/>
+    <path d="M162 200 L146 236 L138 226"/>
+    <path d="M162 200 L192 224 L206 246"/>
+  </g>
+  <text x="24" y="48" font-family="ui-monospace, monospace" font-size="30" font-weight="800" fill="#f6ede8" letter-spacing="6">QWOP</text>
+</svg>

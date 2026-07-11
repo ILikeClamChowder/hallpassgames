@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <pattern id="dgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#2b333d"/>
+      <path d="M32 0 L0 0 L0 32" fill="none" stroke="#3a434f" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="320" height="320" fill="url(#dgrid)"/>
+  <!-- farmable shapes -->
+  <rect x="212" y="60" width="40" height="40" rx="6" fill="#f2c53f" stroke="#c79f2a" stroke-width="3" transform="rotate(18 232 80)"/>
+  <polygon points="250,210 284,232 250,254 224,232" fill="#e05a5a" stroke="#b53c3c" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="70,58 90,72 82,96 56,96 50,72" fill="#7a6ad0" stroke="#5a4aa8" stroke-width="3" stroke-linejoin="round"/>
+  <!-- bullet -->
+  <circle cx="198" cy="150" r="9" fill="#4a90d9" stroke="#2f6fb0" stroke-width="2"/>
+  <!-- tank -->
+  <g transform="translate(120,160)">
+    <rect x="6" y="-11" width="48" height="22" rx="4" fill="#9aa4ac" stroke="#6c7580" stroke-width="2"/>
+    <circle r="26" fill="#4a90d9" stroke="#2f6fb0" stroke-width="4"/>
+  </g>
+</svg>

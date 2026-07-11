@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="trbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12211a"/><stop offset="1" stop-color="#0b1310"/></linearGradient>
+    <linearGradient id="trbar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2f8f5a"/><stop offset="1" stop-color="#57d68d"/></linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#trbg)"/>
+  <rect x="30" y="258" width="260" height="4" rx="2" fill="#254a38"/>
+  <g fill="url(#trbar)">
+    <rect x="44" y="212" width="34" height="46" rx="4"/>
+    <rect x="90" y="184" width="34" height="74" rx="4"/>
+    <rect x="136" y="150" width="34" height="108" rx="4"/>
+    <rect x="182" y="110" width="34" height="148" rx="4"/>
+    <rect x="228" y="64" width="34" height="194" rx="4"/>
+  </g>
+  <g stroke="#ffd86e" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 222 L108 190 L154 156 L200 118 L250 78"/>
+  </g>
+  <path d="M250 78 L231 80 L245 97 Z" fill="#ffd86e"/>
+  <text x="150" y="58" font-family="ui-monospace, monospace" font-size="24" font-weight="800" fill="#ffd86e">&#215;2</text>
+  <!-- trimp creature -->
+  <g transform="translate(58,150)">
+    <ellipse cx="0" cy="0" rx="14" ry="12" fill="#8fe0a8"/>
+    <circle cx="-5" cy="-2" r="2.4" fill="#12211a"/><circle cx="5" cy="-2" r="2.4" fill="#12211a"/>
+    <path d="M-6 6 Q0 10 6 6" stroke="#12211a" stroke-width="2" fill="none"/>
+  </g>
+</svg>

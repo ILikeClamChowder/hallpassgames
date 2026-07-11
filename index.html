@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- Recess = the aggressive-SEO arm of the experiment: it DOES target the
+       "unblocked games" keyword (the opposite of Reddomo's deliberately neutral wording). -->
+  <title>Recess — Unblocked Games, Play Free Online</title>
+  <meta name="description" content="Play hundreds of the best unblocked games free at Recess — Getaway Shootout, Duck Life, Krunker, Minecraft Classic and more. No downloads, no sign-up, instant play." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://recessgames.com/" />
+  <meta name="theme-color" content="#0d1017" />
+
+  <!-- Open Graph (link previews for Discord / iMessage / social) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Recess" />
+  <meta property="og:title" content="Recess — Unblocked Games, Free &amp; Instant" />
+  <meta property="og:description" content="Hundreds of the best free unblocked games. Play instantly — no downloads, no sign-up." />
+  <meta property="og:url" content="https://recessgames.com/" />
+  <meta property="og:image" content="https://recessgames.com/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Recess — Unblocked Games" />
+  <meta name="twitter:description" content="Hundreds of the best free unblocked games. Play instantly, free." />
+  <meta name="twitter:image" content="https://recessgames.com/assets/og.jpg" />
+
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="apple-touch-icon" href="assets/logo.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/styles.css?v=27" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Recess",
+    "url": "https://recessgames.com/",
+    "description": "Hundreds of free unblocked games you can play instantly in your browser.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://recessgames.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/logo.svg" alt="" />
+      <span class="brand-name">Rec<span class="accent">ess</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">Games</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Every game, <span class="accent">one click away.</span></h1>
+        <p class="tagline">Hundreds of the best unblocked games — loads fast, runs anywhere, no downloads or logins. Pick one and play.</p>
+      </div>
+      <div class="hero-art">
+        <img class="domo" src="assets/logo.svg" alt="The Recess mascot" />
+      </div>
+    </section>
+
+    <div class="ad-slot" data-ad="leaderboard" data-ad-label="Leaderboard"></div>
+
+    <div class="controls">
+      <div class="search-wrap">
+        <input id="search" class="search" type="search" placeholder="Search games…" autocomplete="off" aria-label="Search games" />
+      </div>
+      <div class="chips" id="chips" role="tablist" aria-label="Categories"></div>
+    </div>
+
+    <div id="featured-section">
+      <div class="section-label">Featured</div>
+      <section class="grid featured" id="featured"></section>
+    </div>
+
+    <div class="section-label" id="all-label">All games</div>
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <p class="empty" id="empty" hidden>No games match that — try another word.</p>
+
+    <div class="ad-slot" data-ad="leaderboard" data-ad-label="Footer banner"></div>
+  </main>
+
+  <footer class="site-footer">
+    <span class="foot-brand"><img src="assets/logo.svg" alt="" /> Recess</span>
+    <span>© <span id="year"></span> · <a href="privacy.html" style="color:inherit">Privacy</a> · your playground of free unblocked games</span>
+  </footer>
+
+  <script src="js/catalog.js?v=27"></script>
+  <script src="js/main.js?v=27"></script>
+  <script src="js/ads.js?v=27"></script>
+  <script src="js/disguise.js?v=1"></script>
+</body>
+</html>

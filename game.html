@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recess</title>
+  <meta name="description" content="Play instantly on Recess — free browser games, no downloads." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://recessgames.com/game.html" />
+  <meta name="theme-color" content="#0d1017" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Recess" />
+  <meta property="og:title" content="Recess" />
+  <meta property="og:description" content="Play instantly on Recess — free browser games, no downloads." />
+  <meta property="og:url" content="https://recessgames.com/game.html" />
+  <meta property="og:image" content="https://recessgames.com/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Recess" />
+  <meta name="twitter:description" content="Play instantly on Recess — free browser games, no downloads." />
+  <meta name="twitter:image" content="https://recessgames.com/assets/og.jpg" />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="apple-touch-icon" href="assets/logo.svg" />
+  <link rel="stylesheet" href="css/styles.css?v=27" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/logo.svg" alt="" />
+      <span class="brand-name">Rec<span class="accent">ess</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">← All games</a>
+    </nav>
+  </header>
+
+  <main class="player-main">
+    <div class="player-bar">
+      <div class="player-heading">
+        <span class="player-cat" id="game-cat"></span>
+        <h1 class="player-title" id="game-title">Loading…</h1>
+        <p class="player-blurb" id="game-blurb"></p>
+      </div>
+      <button id="fullscreen" class="btn">⤢ Fullscreen</button>
+    </div>
+    <div class="player-frame" id="player-frame">
+      <iframe id="game-frame" title="Game" allow="fullscreen; gamepad; autoplay"></iframe>
+    </div>
+    <p class="player-tip" id="game-tip"></p>
+    <p class="empty" id="game-missing" hidden>That game isn't here. <a href="index.html" style="color:var(--accent)">Back to all games →</a></p>
+
+    <div class="ad-slot" data-ad="leaderboard" data-ad-label="Under game"></div>
+  </main>
+
+  <script src="js/catalog.js?v=27"></script>
+  <script src="js/player.js?v=27"></script>
+  <script src="js/ads.js?v=27"></script>
+  <script src="js/disguise.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs><linearGradient id="skbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#40331a"/><stop offset="1" stop-color="#241d10"/></linearGradient></defs>
+  <rect width="320" height="320" fill="url(#skbg)"/>
+  <rect x="0" y="238" width="320" height="82" fill="#1c160c"/>
+  <g transform="translate(232,150)"><rect width="46" height="46" rx="8" fill="#4a9fe0"/><path d="M23 8 v30 M8 23 h30" stroke="#fff" stroke-width="5"/></g>
+  <g transform="translate(64,146)">
+    <rect x="8" y="40" width="86" height="26" rx="8" fill="#ff5a4a"/>
+    <rect x="70" y="30" width="26" height="20" rx="5" fill="#e0473a"/>
+    <circle cx="40" cy="24" r="16" fill="#ffd0a8"/>
+    <rect x="30" y="4" width="20" height="13" rx="6" fill="#2f4bc0"/>
+    <circle cx="24" cy="70" r="14" fill="#161616"/><circle cx="86" cy="70" r="14" fill="#161616"/>
+  </g>
+  <g transform="translate(186,120)" fill="#ffd24a"><polygon points="0,-12 4,-3 13,0 4,3 0,12 -4,3 -13,0 -4,-3"/></g>
+</svg>

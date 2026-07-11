@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs><linearGradient id="dlbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd0ec"/><stop offset="1" stop-color="#bfe8f5"/></linearGradient></defs>
+  <rect width="320" height="320" fill="url(#dlbg)"/>
+  <circle cx="258" cy="64" r="30" fill="#ffe08a"/>
+  <rect x="0" y="232" width="320" height="88" fill="#5bbf5b"/>
+  <rect x="0" y="232" width="320" height="10" fill="#7ad07a"/>
+  <g fill="#ffffff" opacity=".7"><rect x="30" y="270" width="26" height="6" rx="3"/><rect x="120" y="270" width="26" height="6" rx="3"/><rect x="210" y="270" width="26" height="6" rx="3"/></g>
+  <!-- duck -->
+  <g transform="translate(120,148)">
+    <ellipse cx="30" cy="60" rx="46" ry="34" fill="#ffd94a"/>
+    <circle cx="70" cy="28" r="26" fill="#ffd94a"/>
+    <path d="M92 26 L118 32 L92 40 Z" fill="#ff8a2c"/>
+    <circle cx="74" cy="22" r="5" fill="#1c1c1c"/><circle cx="76" cy="20" r="1.6" fill="#fff"/>
+    <path d="M12 82 L0 98 M28 86 L18 102" stroke="#ff8a2c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M6 58 q-26 4 -36 -6 q24 -6 36 -2 Z" fill="#f2c53f"/>
+  </g>
+</svg>

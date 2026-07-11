@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" role="img" aria-label="Recess mascot">
+  <!-- Placeholder Recess mascot: a friendly blue blob. Swap for a final design later. -->
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ea0ff"/>
+      <stop offset="0.55" stop-color="#5b8cff"/>
+      <stop offset="1" stop-color="#4a6ff0"/>
+    </linearGradient>
+    <radialGradient id="cheek" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8fb6ff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#8fb6ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- feet -->
+  <rect x="52" y="184" width="36" height="24" rx="11" fill="#2f4bc0"/>
+  <rect x="112" y="184" width="36" height="24" rx="11" fill="#2f4bc0"/>
+
+  <!-- arms -->
+  <rect x="8" y="98" width="24" height="58" rx="12" fill="#3f5fd6"/>
+  <rect x="168" y="98" width="24" height="58" rx="12" fill="#3f5fd6"/>
+
+  <!-- body -->
+  <rect x="28" y="26" width="144" height="164" rx="46" fill="url(#body)"/>
+  <!-- top sheen -->
+  <rect x="44" y="40" width="112" height="28" rx="14" fill="#ffffff" opacity="0.12"/>
+
+  <!-- cheeks -->
+  <circle cx="56" cy="120" r="18" fill="url(#cheek)"/>
+  <circle cx="144" cy="120" r="18" fill="url(#cheek)"/>
+
+  <!-- eyes -->
+  <ellipse cx="76" cy="96" rx="14" ry="17" fill="#f2f6ff"/>
+  <ellipse cx="124" cy="96" rx="14" ry="17" fill="#f2f6ff"/>
+  <circle cx="79" cy="100" r="7" fill="#0d1017"/>
+  <circle cx="121" cy="100" r="7" fill="#0d1017"/>
+  <circle cx="82" cy="97" r="2.3" fill="#fff"/>
+  <circle cx="124" cy="97" r="2.3" fill="#fff"/>
+
+  <!-- friendly mouth with a little play-triangle (it's "playing") -->
+  <rect x="74" y="130" width="52" height="30" rx="13" fill="#0d1730"/>
+  <path d="M94 138 L110 145 L94 152 Z" fill="#7fd6a0"/>
+</svg>
