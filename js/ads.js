@@ -11,16 +11,16 @@
 // ============================================================
 (function () {
   const ADS = {
-    enabled: false, // ← set true once the real keys below are filled in
+    enabled: true, // live — real Adsterra keys wired in below
 
-    // Banner units (iframe format). Replace key + domain with your Adsterra unit's.
+    // Banner units (iframe format).
     banners: {
-      leaderboard: { key: "REPLACE_WITH_ADSTERRA_728x90_KEY",  domain: "www.highperformanceformat.com", width: 728, height: 90 },
-      rectangle:   { key: "REPLACE_WITH_ADSTERRA_300x250_KEY", domain: "www.highperformanceformat.com", width: 300, height: 250 },
+      leaderboard: { key: "3e3285ef72fb867f7e2bece84ccf3758", domain: "www.highperformanceformat.com", width: 728, height: 90 },
+      rectangle:   { key: "08b5f92cabf138ad9ecf795191bc6e13", domain: "www.highperformanceformat.com", width: 300, height: 250 },
     },
 
-    // Optional page-level scripts (paste the full //... src from Adsterra).
-    socialBar: "", // e.g. "//pl00000.effectivegatecpm.com/ab/cd/ef/abcdef.js"
+    // Page-level scripts (full src from Adsterra).
+    socialBar: "https://pl30321214.effectivecpmnetwork.com/f2/8c/66/f28c66861af0a5f3609c57785ad4e9cc.js",
     popunder: "",
   };
 
