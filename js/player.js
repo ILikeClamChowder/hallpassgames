@@ -69,7 +69,27 @@
     document.head.appendChild(s);
   })();
   frame.src = game.type === "embed" ? game.src : `games/${game.id}/index.html?v=27`;
-  if (game.type === "embed") tipEl.textContent = "Loaded from the game's official free site.";
+  if (game.type === "embed") {
+    tipEl.textContent = "Loaded from the game's official free site.";
+
+    // ---- graceful fallback ----------------------------------------------
+    // Some hosts refuse to be framed (X-Frame-Options / CSP frame-ancestors),
+    // and CrazyGames' /embed/ endpoint only frames from domains registered in
+    // its Developer Portal. When that happens the iframe is just blank with no
+    // way out, so always offer a direct "open on the original site" link.
+    // For CrazyGames the human-facing page is /game/<slug> (not /embed/<slug>).
+    const directUrl = /crazygames\.com\/embed\//.test(game.src)
+      ? game.src.replace("/embed/", "/game/")
+      : game.src;
+    const fb = document.getElementById("game-fallback");
+    const fbLink = document.getElementById("game-fallback-link");
+    const fbName = document.getElementById("game-fallback-name");
+    if (fb && fbLink) {
+      fbLink.href = directUrl;
+      if (fbName) fbName.textContent = game.title;
+      fb.hidden = false;
+    }
+  }
 
   fsBtn.addEventListener("click", () => {
     const el = frameWrap;

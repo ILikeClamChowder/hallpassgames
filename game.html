@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="https://recessgames.com/assets/og.jpg" />
   <link rel="icon" href="assets/logo.svg" />
   <link rel="apple-touch-icon" href="assets/logo.svg" />
-  <link rel="stylesheet" href="css/styles.css?v=27" />
+  <link rel="stylesheet" href="css/styles.css?v=28" />
 </head>
 <body>
   <header class="site-header">
@@ -46,14 +46,18 @@
       <iframe id="game-frame" title="Game" allow="fullscreen; gamepad; autoplay"></iframe>
     </div>
     <p class="player-tip" id="game-tip"></p>
+    <p class="player-fallback" id="game-fallback" hidden>
+      Game not loading? A few games only run on their own site.
+      <a id="game-fallback-link" target="_blank" rel="noopener">Open <span id="game-fallback-name">the game</span> ↗</a>
+    </p>
     <p class="empty" id="game-missing" hidden>That game isn't here. <a href="index.html" style="color:var(--accent)">Back to all games →</a></p>
 
     <div class="ad-slot" data-ad="leaderboard" data-ad-label="Under game"></div>
   </main>
 
-  <script src="js/catalog.js?v=27"></script>
-  <script src="js/player.js?v=27"></script>
-  <script src="js/ads.js?v=27"></script>
+  <script src="js/catalog.js?v=28"></script>
+  <script src="js/player.js?v=28"></script>
+  <script src="js/ads.js?v=28"></script>
   <script src="js/disguise.js?v=1"></script>
 </body>
 </html>

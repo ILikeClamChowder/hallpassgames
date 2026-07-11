@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs><linearGradient id="ddbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3d22"/><stop offset="1" stop-color="#2e1e10"/></linearGradient></defs>
+  <rect width="320" height="320" fill="url(#ddbg)"/>
+  <!-- dug tunnel -->
+  <path d="M40 90 Q140 60 180 140 T280 210" fill="none" stroke="#1c120a" stroke-width="34" stroke-linecap="round"/>
+  <!-- gems in dirt -->
+  <g><polygon points="90,220 104,232 98,250 82,250 76,232" fill="#43e07c"/></g>
+  <g><polygon points="250,90 262,100 258,116 242,116 238,100" fill="#5b8cff"/></g>
+  <!-- drill worm head -->
+  <g transform="translate(268,200)">
+    <circle r="30" fill="#ffce4a"/>
+    <polygon points="26,-16 58,0 26,16" fill="#c0c6cc"/>
+    <polygon points="30,-10 50,0 30,10" fill="#8a9098"/>
+    <circle cx="-6" cy="-8" r="6" fill="#111"/><circle cx="8" cy="-8" r="6" fill="#111"/>
+  </g>
+</svg>

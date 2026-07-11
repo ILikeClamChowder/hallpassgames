@@ -44,9 +44,53 @@ const CATALOG = [
   {
     id: "smash-karts", title: "Smash Karts", cat: "io",
     tags: ["kart", "battle", "io", "multiplayer", "3d"], type: "embed",
-    src: "https://www.crazygames.com/embed/smash-karts",
+    src: "https://smashkarts.io/",
     blurb: "Blast rivals in a 3D kart battle arena. Grab weapons, don't get smashed.",
     thumb: "assets/thumbs/smash-karts.svg", icon: "🏎️", color: "#3a2a12", featured: true,
+  },
+
+  // ---- reliable standalone hits (frame anywhere — no registration needed) ----
+  {
+    id: "slither", title: "Slither.io", cat: "io",
+    tags: ["snake", "io", "multiplayer", "classic"], type: "embed", src: "https://slither.io/",
+    blurb: "Grow the longest snake on the server. Cut people off, eat their glow.",
+    thumb: "assets/thumbs/slither.svg", icon: "🐍", color: "#12242a", featured: true,
+  },
+  {
+    id: "1v1-lol", title: "1v1.LOL", cat: "Shooter",
+    tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed", src: "https://1v1.lol/",
+    blurb: "Build-and-blast third-person duels — the browser build-battle everyone knows.",
+    thumb: "assets/thumbs/1v1lol.svg", icon: "🔫", color: "#243044", featured: true,
+  },
+  {
+    id: "paper-io", title: "Paper.io 2", cat: "io",
+    tags: ["io", "territory", "multiplayer", "arcade"], type: "embed", src: "https://paper-io.com/",
+    blurb: "Claim the map by drawing loops — just don't let anyone cross your tail.",
+    thumb: "assets/thumbs/paperio.svg", icon: "🟦", color: "#141b28",
+  },
+  {
+    id: "bloxd", title: "Bloxd.io", cat: "Sandbox",
+    tags: ["blocks", "io", "multiplayer", "minecraft", "build"], type: "embed", src: "https://bloxd.io/",
+    blurb: "A blocky multiplayer sandbox with minigames — build, race, and survive.",
+    thumb: "assets/thumbs/bloxd.svg", icon: "🧱", color: "#2a6db0",
+  },
+  {
+    id: "territorial", title: "Territorial.io", cat: "io",
+    tags: ["strategy", "io", "risk", "map", "conquer"], type: "embed", src: "https://territorial.io/",
+    blurb: "Simple, ruthless map conquest — outnumber every neighbor and take the world.",
+    thumb: "assets/thumbs/territorial.svg", icon: "🗺️", color: "#0f1a24",
+  },
+  {
+    id: "digdig", title: "Digdig.io", cat: "io",
+    tags: ["io", "dig", "multiplayer", "arcade"], type: "embed", src: "https://digdig.io/",
+    blurb: "Dig tunnels, grow bigger, and swallow smaller diggers underground.",
+    thumb: "assets/thumbs/digdig.svg", icon: "⛏️", color: "#2e1e10",
+  },
+  {
+    id: "pacman", title: "Pac-Man", cat: "Arcade",
+    tags: ["classic", "arcade", "maze", "retro"], type: "embed", src: "https://freepacman.org/",
+    blurb: "The maze-chase arcade legend — clear the dots, dodge the ghosts.",
+    thumb: "assets/thumbs/pacman.svg", icon: "🟡", color: "#05060f",
   },
   {
     id: "rooftop-snipers", title: "Rooftop Snipers", cat: "2 Player",

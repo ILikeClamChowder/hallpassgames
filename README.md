@@ -37,20 +37,30 @@ Edit `js/catalog.js` and drop in an object:
 - Thumbnails: drop an SVG/PNG in `assets/thumbs/` and point `thumb:` at it.
 - Categories come from `CATEGORIES` at the top of `catalog.js`.
 
-## CrazyGames embeds
+## Which games work on day one
 
-Games with `src: "https://www.crazygames.com/embed/<slug>"` use CrazyGames'
-official embed endpoint. It only allows framing from **domains you register**
-(free) in the [CrazyGames Developer Portal](https://developer.crazygames.com/)
-→ Embed. Steps:
+**Most of the catalog frames anywhere with no setup** — the `.io` games
+(slither, 1v1.lol, paper.io, bloxd, territorial, digdig, smashkarts.io, diep,
+zombsroyale, skribbl), the classics (Pac-Man, dino run, astray, solitaire,
+sandspiel), the idle games, and Minecraft Classic all load immediately.
+
+**Only the 6 `crazygames.com/embed/<slug>` games need a step.** Getaway Shootout,
+Duck Life, Drift Hunters, Rooftop Snipers, House of Hazards, and 12 MiniBattles
+use CrazyGames' embed endpoint, which only allows framing from **domains you
+register** (free) in the [CrazyGames Developer Portal](https://developer.crazygames.com/)
+→ Embed:
 
 1. Sign up, add `recessgames.com` (and any staging domain) as an allowed domain.
-2. The embeds then render on that domain. They stay blocked on `localhost` and
-   any unregistered origin — not a bug.
+2. They then render on that domain. They stay blocked on `localhost` and any
+   unregistered origin — not a bug.
 
-Reliable framing without registration comes from
+Every embed page shows an automatic **"Game not loading? Open it on the original
+site ↗"** fallback link (`js/player.js`), so a frame-blocked game is never a dead
+end — before you register the domain, those 6 still send players to the real game.
+
+If you'd rather not depend on CrazyGames at all,
 [GameDistribution DGI](https://gamedistribution.com/publishers/embedded-links/)
-(per-game iframe codes, revenue share) if you'd rather not depend on CrazyGames.
+gives per-game iframe codes that frame anywhere **and** pay a revenue share.
 
 ## Ads (Adsterra)
 
