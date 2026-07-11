@@ -1,6 +1,6 @@
 {
-  "name": "Recess",
-  "short_name": "Recess",
+  "name": "Hall Pass",
+  "short_name": "Hall Pass",
   "description": "A hand-picked arcade of fun browser games. Play instantly, free.",
   "start_url": "/",
   "display": "standalone",

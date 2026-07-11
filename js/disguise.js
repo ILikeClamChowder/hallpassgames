@@ -1,11 +1,11 @@
 // ============================================================
 //  Disguise / "boss key" — swaps the tab title + favicon to look
-//  like schoolwork. Default is off (real Recess). The choice is
+//  like schoolwork. Default is off (real Hall Pass). The choice is
 //  saved so the whole site stays disguised while you browse & play.
 //  Trigger: the header button, or press the ` (backtick) key.
 // ============================================================
 (function () {
-  const KEY = "recess_disguise";
+  const KEY = "hallpass_disguise";
 
   // --- trademark-safe, generic category icons (data-URI SVGs) ---
   const svg = (inner) =>

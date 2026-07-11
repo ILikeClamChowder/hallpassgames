@@ -1,7 +1,7 @@
 // ============================================================
-//  Recess game catalog  (embeds-only)
+//  Hall Pass game catalog  (embeds-only)
 //
-//  Recess is the "cast a wide net" site: every game is embedded from an
+//  Hall Pass is the "cast a wide net" site: every game is embedded from an
 //  external host — nothing is self-hosted here.
 //
 //  type    "embed" -> loads `src` (external URL) inside our player iframe
@@ -9,7 +9,7 @@
 //
 //  --- CrazyGames embeds (src = https://www.crazygames.com/embed/<slug>) ---
 //  CrazyGames' embed endpoint only allows framing from domains you register
-//  (free) in the CrazyGames Developer Portal → Embed. Until recessgames.com
+//  (free) in the CrazyGames Developer Portal → Embed. Until hallpassgames.com
 //  is registered there, those games are frame-blocked off-domain (e.g. on
 //  localhost) — that's expected, not a bug. See README.md.
 //

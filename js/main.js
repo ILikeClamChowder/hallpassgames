@@ -137,19 +137,19 @@
     const items = visible.map((g, i) => {
       const url = g.type === "link"
         ? g.src
-        : "https://recessgames.com/game.html?id=" + encodeURIComponent(g.id);
+        : "https://hallpassgames.com/game.html?id=" + encodeURIComponent(g.id);
       return {
         "@type": "ListItem",
         "position": i + 1,
         "name": g.title,
         "url": url,
-        ...(g.thumb ? { "image": "https://recessgames.com/" + g.thumb.replace(/^\//, "") } : {}),
+        ...(g.thumb ? { "image": "https://hallpassgames.com/" + g.thumb.replace(/^\//, "") } : {}),
       };
     });
     const ld = {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "Recess — browser games",
+      "name": "Hall Pass — browser games",
       "numberOfItems": items.length,
       "itemListElement": items,
     };

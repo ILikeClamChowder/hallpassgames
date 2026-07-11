@@ -1,7 +1,7 @@
 {
-  // Deploys this repo as a Cloudflare Pages/Workers static site named "recess"
+  // Deploys this repo as a Cloudflare Pages/Workers static site named "hallpass"
   // (no build step, no Worker code). Create the project on first deploy.
-  "name": "recess",
+  "name": "hallpass",
   "compatibility_date": "2026-07-08",
   "assets": {
     "directory": "."

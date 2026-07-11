@@ -1,10 +1,10 @@
-# Recess
+# Hall Pass
 
 A static browser-games site — the "cast a wide net" sibling to Reddomo. Every
 game is **embedded** from an external host; nothing is self-hosted. Monetized
 with **Adsterra** (not AdSense). No build step, no framework — just HTML/CSS/JS.
 
-This is the aggressive arm of an A/B experiment: Recess targets the "unblocked
+This is the aggressive arm of an A/B experiment: Hall Pass targets the "unblocked
 games" keyword and uses an AdSense-alternative ad network, so its performance
 can be compared against Reddomo (curated + AdSense).
 
@@ -50,7 +50,7 @@ use CrazyGames' embed endpoint, which only allows framing from **domains you
 register** (free) in the [CrazyGames Developer Portal](https://developer.crazygames.com/)
 → Embed:
 
-1. Sign up, add `recessgames.com` (and any staging domain) as an allowed domain.
+1. Sign up, add `hallpassgames.com` (and any staging domain) as an allowed domain.
 2. They then render on that domain. They stay blocked on `localhost` and any
    unregistered origin — not a bug.
 
@@ -68,7 +68,7 @@ Ad slots live in the layout as `<div class="ad-slot" data-ad="...">` and are
 driven by `js/ads.js`. Until you add keys they show labeled placeholders.
 
 To go live:
-1. Adsterra dashboard → Websites → add `recessgames.com`.
+1. Adsterra dashboard → Websites → add `hallpassgames.com`.
 2. Create ad units (Banner 728×90, Banner 300×250, optionally Social Bar / Popunder).
 3. Put the keys/URLs into the `ADS` object at the top of `js/ads.js` and set
    `enabled: true`.
@@ -82,9 +82,8 @@ To go live:
 3. Build command: *(none)*. Output directory: `/` (root).
 4. Add the custom domain under **Custom domains**.
 
-Placeholder domain `recessgames.com` is hard-coded in canonical/OG/sitemap tags
-and in `js/main.js` / `js/player.js`. Search-and-replace it once you pick the
-real domain.
+The production domain `hallpassgames.com` is hard-coded in canonical/OG/sitemap
+tags and in `js/main.js` / `js/player.js`.
 
 ## Structure
 

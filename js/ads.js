@@ -1,11 +1,11 @@
 // ============================================================
-//  Recess ads — Adsterra loader.
+//  Hall Pass ads — Adsterra loader.
 //
-//  Recess monetizes with Adsterra (not AdSense). Drop your real zone keys
+//  Hall Pass monetizes with Adsterra (not AdSense). Drop your real zone keys
 //  into ADS below and flip `enabled` to true. Until then, every ad slot
 //  renders a labeled placeholder so the layout reserves the right space.
 //
-//  Getting keys: Adsterra dashboard → Websites → add recessgames.com →
+//  Getting keys: Adsterra dashboard → Websites → add hallpassgames.com →
 //  create ad units. A "Banner" unit gives you a key + a script domain; a
 //  "Social Bar" / "Popunder" unit gives a single script URL.
 // ============================================================
