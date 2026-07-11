@@ -7,11 +7,14 @@
 //  type    "embed" -> loads `src` (external URL) inside our player iframe
 //          "link"  -> opens `src` in a new tab (hosts that block embedding)
 //
-//  --- CrazyGames embeds (src = https://www.crazygames.com/embed/<slug>) ---
-//  CrazyGames' embed endpoint only allows framing from domains you register
-//  (free) in the CrazyGames Developer Portal → Embed. Until hallpassgames.com
-//  is registered there, those games are frame-blocked off-domain (e.g. on
-//  localhost) — that's expected, not a bug. See README.md.
+//  --- Sourcing note ---
+//  Most games load from the game's own official site (slither.io, krunker.io,
+//  diep.io, etc.) or GameDistribution's licensed embed CDN (Rooftop Snipers).
+//  A handful of portal-exclusive titles (Getaway Shootout, Duck Life, Drift
+//  Hunters, House of Hazards, 12 MiniBattles) have no official embeddable copy,
+//  so they point at third-party mirror hosts (mostly *.github.io). Those are
+//  best-effort "works today" sources — they can break or change without notice;
+//  the player page shows an "open on the original site" fallback if one fails.
 //
 //  Fields: id, title, cat, tags, type, src, blurb, thumb, icon, color, featured
 // ============================================================
@@ -19,25 +22,25 @@
 const CATEGORIES = ["All", "Action", "Shooter", "io", "Racing", "2 Player", "Arcade", "Puzzle", "Idle", "Sandbox"];
 
 const CATALOG = [
-  // ---- marquee popular games (CrazyGames embeds) ----
+  // ---- marquee popular games ----
   {
     id: "getaway-shootout", title: "Getaway Shootout", cat: "2 Player",
     tags: ["shooter", "party", "2 player", "ragdoll", "race"], type: "embed",
-    src: "https://www.crazygames.com/embed/getaway-shootout",
+    src: "https://getawayshootoutonline.github.io/",
     blurb: "Race to the getaway by any means — a chaotic 2-player ragdoll shooter.",
     thumb: "assets/thumbs/getaway-shootout.svg", icon: "🔫", color: "#2a3550", featured: true,
   },
   {
     id: "ducklife", title: "Duck Life", cat: "Arcade",
     tags: ["duck", "rpg", "race", "train", "kids"], type: "embed",
-    src: "https://www.crazygames.com/embed/ducklife",
+    src: "https://gamehtml5.github.io/play/duck-life-4.html",
     blurb: "Train your duckling to run, fly and swim its way to championship glory.",
     thumb: "assets/thumbs/ducklife.svg", icon: "🦆", color: "#2f7d4f", featured: true,
   },
   {
     id: "drift-hunters", title: "Drift Hunters", cat: "Racing",
     tags: ["car", "drift", "racing", "3d", "tuning"], type: "embed",
-    src: "https://www.crazygames.com/embed/drift-hunters",
+    src: "https://drift-hunters.co/.embed",
     blurb: "Tune real cars and rack up points sliding around detailed 3D tracks.",
     thumb: "assets/thumbs/drift-hunters.svg", icon: "🏎️", color: "#2c2430", featured: true,
   },
@@ -95,21 +98,23 @@ const CATALOG = [
   {
     id: "rooftop-snipers", title: "Rooftop Snipers", cat: "2 Player",
     tags: ["shooter", "2 player", "party", "physics"], type: "embed",
-    src: "https://www.crazygames.com/embed/rooftop-snipers",
+    // GameDistribution licensed embed (frames anywhere, revenue share) — replaces
+    // the CrazyGames /embed/ URL, which only frames from CrazyGames' own domains.
+    src: "https://html5.gamedistribution.com/c3a70ae98547407a92ebedca8b79fdfa/?gd_sdk_referrer_url=https://hallpassgames.com/game.html?id=rooftop-snipers",
     blurb: "One button, two players, one goal — knock your rival off the roof.",
     thumb: "assets/thumbs/rooftop-snipers.svg", icon: "🎯", color: "#33263f",
   },
   {
     id: "house-of-hazards", title: "House of Hazards", cat: "2 Player",
     tags: ["party", "2 player", "traps", "co-op"], type: "embed",
-    src: "https://www.crazygames.com/embed/house-of-hazards",
+    src: "https://gamehtml5.github.io/play/house-of-hazards.html",
     blurb: "Complete tasks around a booby-trapped house while sabotaging your friends.",
     thumb: "assets/thumbs/house-of-hazards.svg", icon: "🏠", color: "#3f2c18",
   },
   {
     id: "12-minibattles", title: "12 MiniBattles", cat: "2 Player",
     tags: ["party", "2 player", "minigames", "versus"], type: "embed",
-    src: "https://www.crazygames.com/embed/12-minibattles",
+    src: "https://gamehtml5.github.io/play/12-minibattles.html",
     blurb: "Twelve frantic one-button duels for two players. Best of the bunch wins.",
     thumb: "assets/thumbs/12-minibattles.svg", icon: "🤺", color: "#3a2630",
   },
