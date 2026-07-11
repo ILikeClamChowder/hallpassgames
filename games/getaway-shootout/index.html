@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Getaway Shootout</title>
+  <!-- Self-hosted clean wrapper: loads the Unity build full-bleed from the CDN
+       (no external website chrome). Same build the triplereddd site uses. -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+    #gameContainer { width: 100vw; height: 100vh; }
+    #gameContainer canvas { width: 100% !important; height: 100% !important; display: block; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/lordsofdank/GetawayShootout@9e99964c43638346680fce45d3b296408da61181/Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate(
+      "gameContainer",
+      "https://cdn.jsdelivr.net/gh/lordsofdank/GetawayShootout@9e99964c43638346680fce45d3b296408da61181/Build/GetawayShootoutTwoPlayerGamesOrg.json"
+    );
+  </script>
+</head>
+<body>
+  <div id="gameContainer"></div>
+</body>
+</html>

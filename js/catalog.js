@@ -1,20 +1,21 @@
 // ============================================================
 //  Hall Pass game catalog  (embeds-only)
 //
-//  Hall Pass is the "cast a wide net" site: every game is embedded from an
-//  external host — nothing is self-hosted here.
+//  Hall Pass is the "cast a wide net" site: games are embedded from external
+//  hosts, with a couple self-hosted wrappers for games that need one.
 //
 //  type    "embed" -> loads `src` (external URL) inside our player iframe
+//          "self"  -> loads games/<id>/index.html (self-hosted wrapper page)
 //          "link"  -> opens `src` in a new tab (hosts that block embedding)
 //
 //  --- Sourcing note ---
 //  Most games load from the game's own official site (slither.io, krunker.io,
-//  diep.io, etc.) or GameDistribution's licensed embed CDN (Rooftop Snipers).
-//  A handful of portal-exclusive titles (Getaway Shootout, Duck Life, Drift
-//  Hunters, House of Hazards, 12 MiniBattles) have no official embeddable copy,
-//  so they point at third-party mirror hosts (mostly *.github.io). Those are
-//  best-effort "works today" sources — they can break or change without notice;
-//  the player page shows an "open on the original site" fallback if one fails.
+//  diep.io, etc.). A handful of portal-exclusive titles (Getaway Shootout, Duck
+//  Life, Drift Hunters, 1v1.LOL, Pac-Man, Rooftop Snipers) have no official
+//  embeddable copy, so they use clean single-game mirror hosts (mostly
+//  *.github.io) or a self-hosted wrapper. Those are best-effort "works today"
+//  sources — they can break or change; the player shows an "open on the
+//  original site" fallback if an embed fails.
 //
 //  Fields: id, title, cat, tags, type, src, blurb, thumb, icon, color, featured
 // ============================================================
@@ -25,31 +26,30 @@ const CATALOG = [
   // ---- marquee popular games ----
   {
     id: "getaway-shootout", title: "Getaway Shootout", cat: "2 Player",
-    tags: ["shooter", "party", "2 player", "ragdoll", "race"], type: "embed",
-    src: "https://getawayshootoutonline.github.io/",
+    tags: ["shooter", "party", "2 player", "ragdoll", "race"], type: "self",
     blurb: "Race to the getaway by any means — a chaotic 2-player ragdoll shooter.",
-    thumb: "assets/thumbs/getaway-shootout.svg", icon: "🔫", color: "#2a3550", featured: true,
+    icon: "🔫", color: "#2a3550", featured: true,
   },
   {
-    id: "ducklife", title: "Duck Life", cat: "Arcade",
+    id: "ducklife", title: "Duck Life 4", cat: "Arcade",
     tags: ["duck", "rpg", "race", "train", "kids"], type: "embed",
-    src: "https://gamehtml5.github.io/play/duck-life-4.html",
+    src: "https://ikyih.github.io/DuckLife4/",
     blurb: "Train your duckling to run, fly and swim its way to championship glory.",
-    thumb: "assets/thumbs/ducklife.svg", icon: "🦆", color: "#2f7d4f", featured: true,
+    icon: "🦆", color: "#2f7d4f", featured: true,
   },
   {
     id: "drift-hunters", title: "Drift Hunters", cat: "Racing",
     tags: ["car", "drift", "racing", "3d", "tuning"], type: "embed",
-    src: "https://drift-hunters.co/.embed",
+    src: "https://cyamanz.github.io/play/drift-hunters/index.html",
     blurb: "Tune real cars and rack up points sliding around detailed 3D tracks.",
-    thumb: "assets/thumbs/drift-hunters.svg", icon: "🏎️", color: "#2c2430", featured: true,
+    icon: "🏎️", color: "#2c2430", featured: true,
   },
   {
     id: "smash-karts", title: "Smash Karts", cat: "io",
     tags: ["kart", "battle", "io", "multiplayer", "3d"], type: "embed",
     src: "https://smashkarts.io/",
     blurb: "Blast rivals in a 3D kart battle arena. Grab weapons, don't get smashed.",
-    thumb: "assets/thumbs/smash-karts.svg", icon: "🏎️", color: "#3a2a12", featured: true,
+    icon: "🏎️", color: "#3a2a12", featured: true,
   },
 
   // ---- reliable standalone hits (frame anywhere — no registration needed) ----
@@ -57,66 +57,45 @@ const CATALOG = [
     id: "slither", title: "Slither.io", cat: "io",
     tags: ["snake", "io", "multiplayer", "classic"], type: "embed", src: "https://slither.io/",
     blurb: "Grow the longest snake on the server. Cut people off, eat their glow.",
-    thumb: "assets/thumbs/slither.svg", icon: "🐍", color: "#12242a", featured: true,
+    icon: "🐍", color: "#12242a", featured: true,
   },
   {
     id: "1v1-lol", title: "1v1.LOL", cat: "Shooter",
-    tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed", src: "https://1v1.lol/",
+    tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed",
+    src: "https://cyamanz.github.io/play/1v1-lol/index.html",
     blurb: "Build-and-blast third-person duels — the browser build-battle everyone knows.",
-    thumb: "assets/thumbs/1v1lol.svg", icon: "🔫", color: "#243044", featured: true,
+    icon: "🔫", color: "#243044", featured: true,
   },
   {
     id: "paper-io", title: "Paper.io 2", cat: "io",
     tags: ["io", "territory", "multiplayer", "arcade"], type: "embed", src: "https://paper-io.com/",
     blurb: "Claim the map by drawing loops — just don't let anyone cross your tail.",
-    thumb: "assets/thumbs/paperio.svg", icon: "🟦", color: "#141b28",
-  },
-  {
-    id: "bloxd", title: "Bloxd.io", cat: "Sandbox",
-    tags: ["blocks", "io", "multiplayer", "minecraft", "build"], type: "embed", src: "https://bloxd.io/",
-    blurb: "A blocky multiplayer sandbox with minigames — build, race, and survive.",
-    thumb: "assets/thumbs/bloxd.svg", icon: "🧱", color: "#2a6db0",
+    icon: "🟦", color: "#141b28",
   },
   {
     id: "territorial", title: "Territorial.io", cat: "io",
     tags: ["strategy", "io", "risk", "map", "conquer"], type: "embed", src: "https://territorial.io/",
     blurb: "Simple, ruthless map conquest — outnumber every neighbor and take the world.",
-    thumb: "assets/thumbs/territorial.svg", icon: "🗺️", color: "#0f1a24",
+    icon: "🗺️", color: "#0f1a24",
   },
   {
     id: "digdig", title: "Digdig.io", cat: "io",
     tags: ["io", "dig", "multiplayer", "arcade"], type: "embed", src: "https://digdig.io/",
     blurb: "Dig tunnels, grow bigger, and swallow smaller diggers underground.",
-    thumb: "assets/thumbs/digdig.svg", icon: "⛏️", color: "#2e1e10",
+    icon: "⛏️", color: "#2e1e10",
   },
   {
     id: "pacman", title: "Pac-Man", cat: "Arcade",
-    tags: ["classic", "arcade", "maze", "retro"], type: "embed", src: "https://freepacman.org/",
+    tags: ["classic", "arcade", "maze", "retro"], type: "embed", src: "https://cyamanz.github.io/play/pacman/index.html",
     blurb: "The maze-chase arcade legend — clear the dots, dodge the ghosts.",
-    thumb: "assets/thumbs/pacman.svg", icon: "🟡", color: "#05060f",
+    icon: "🟡", color: "#05060f",
   },
   {
     id: "rooftop-snipers", title: "Rooftop Snipers", cat: "2 Player",
     tags: ["shooter", "2 player", "party", "physics"], type: "embed",
-    // GameDistribution licensed embed (frames anywhere, revenue share) — replaces
-    // the CrazyGames /embed/ URL, which only frames from CrazyGames' own domains.
-    src: "https://html5.gamedistribution.com/c3a70ae98547407a92ebedca8b79fdfa/?gd_sdk_referrer_url=https://hallpassgames.com/game.html?id=rooftop-snipers",
+    src: "https://cyamanz.github.io/play/rooftop-snipers/index.html",
     blurb: "One button, two players, one goal — knock your rival off the roof.",
-    thumb: "assets/thumbs/rooftop-snipers.svg", icon: "🎯", color: "#33263f",
-  },
-  {
-    id: "house-of-hazards", title: "House of Hazards", cat: "2 Player",
-    tags: ["party", "2 player", "traps", "co-op"], type: "embed",
-    src: "https://gamehtml5.github.io/play/house-of-hazards.html",
-    blurb: "Complete tasks around a booby-trapped house while sabotaging your friends.",
-    thumb: "assets/thumbs/house-of-hazards.svg", icon: "🏠", color: "#3f2c18",
-  },
-  {
-    id: "12-minibattles", title: "12 MiniBattles", cat: "2 Player",
-    tags: ["party", "2 player", "minigames", "versus"], type: "embed",
-    src: "https://gamehtml5.github.io/play/12-minibattles.html",
-    blurb: "Twelve frantic one-button duels for two players. Best of the bunch wins.",
-    thumb: "assets/thumbs/12-minibattles.svg", icon: "🤺", color: "#3a2630",
+    icon: "🎯", color: "#33263f",
   },
 
   // ---- .io / multiplayer ----
@@ -130,7 +109,7 @@ const CATALOG = [
     id: "diep", title: "Diep.io", cat: "io",
     tags: ["io", "tanks", "shooter", "multiplayer", "upgrade"], type: "embed", src: "https://diep.io/",
     blurb: "Upgrade your tank, farm shapes, and take down the leaderboard.",
-    thumb: "assets/thumbs/diep.svg", icon: "🔺", color: "#2b333d",
+    icon: "🔺", color: "#2b333d",
   },
   {
     id: "zombsroyale", title: "ZombsRoyale.io", cat: "io",
@@ -162,13 +141,13 @@ const CATALOG = [
     id: "dino-run", title: "Dino Run", cat: "Arcade",
     tags: ["runner", "chrome", "t-rex", "endless"], type: "embed", src: "https://wayou.github.io/t-rex-runner/",
     blurb: "The offline Chrome dino — jump the cacti, chase a high score.",
-    thumb: "assets/thumbs/dino-run.svg", icon: "🦖", color: "#232830",
+    icon: "🦖", color: "#232830",
   },
   {
     id: "astray", title: "Astray", cat: "Arcade",
     tags: ["maze", "3d", "marble"], type: "embed", src: "https://wwwtyro.github.io/Astray/",
     blurb: "Tilt a marble through a slick 3D maze.",
-    thumb: "assets/thumbs/astray.svg", icon: "🌀", color: "#141c1e",
+    icon: "🌀", color: "#141c1e",
   },
   {
     id: "ztype", title: "ZType", cat: "Arcade",
@@ -200,7 +179,7 @@ const CATALOG = [
     id: "solitaire", title: "Solitaire", cat: "Puzzle",
     tags: ["cards", "klondike", "patience"], type: "embed", src: "https://www.solitr.com/",
     blurb: "Classic Klondike solitaire — the study-hall staple.",
-    thumb: "assets/thumbs/solitaire.svg", icon: "🃏", color: "#124a2f",
+    icon: "🃏", color: "#124a2f",
   },
   {
     id: "little-alchemy-2", title: "Little Alchemy 2", cat: "Puzzle",
@@ -212,7 +191,7 @@ const CATALOG = [
     id: "untrusted", title: "Untrusted", cat: "Puzzle",
     tags: ["coding", "javascript", "escape"], type: "embed", src: "https://alexnisnevich.github.io/untrusted/",
     blurb: "Escape each level by rewriting its JavaScript. Genius.",
-    thumb: "assets/thumbs/untrusted.svg", icon: "💻", color: "#0e140e",
+    icon: "💻", color: "#0e140e",
   },
 
   // ---- sandbox ----
@@ -220,13 +199,19 @@ const CATALOG = [
     id: "minecraft-classic", title: "Minecraft Classic", cat: "Sandbox",
     tags: ["build", "blocks", "mojang"], type: "embed", src: "https://classic.minecraft.net/",
     blurb: "The original Minecraft, free from Mojang. Build anything.",
-    thumb: "assets/thumbs/minecraft-classic.svg", icon: "⛏️", color: "#151a26", featured: true,
+    icon: "⛏️", color: "#151a26", featured: true,
+  },
+  {
+    id: "minecraft-152", title: "Minecraft 1.5.2", cat: "Sandbox",
+    tags: ["build", "blocks", "mojang", "survival"], type: "embed", src: "https://sd592g.github.io/zj684od4lfg/",
+    blurb: "Full Minecraft 1.5.2 in the browser — survival, crafting, the works.",
+    icon: "⛏️", color: "#3a2a18",
   },
   {
     id: "sandspiel", title: "Sandspiel", cat: "Sandbox",
     tags: ["falling sand", "physics", "toy", "elements"], type: "embed", src: "https://sandspiel.club/",
     blurb: "A mesmerizing falling-sand playground — fire, water, plants, lava.",
-    thumb: "assets/thumbs/sandspiel.svg", icon: "🧪", color: "#201812",
+    icon: "🧪", color: "#201812",
   },
 
   // ---- idle / incremental ----
@@ -234,7 +219,7 @@ const CATALOG = [
     id: "paperclips", title: "Universal Paperclips", cat: "Idle",
     tags: ["incremental", "clicker", "ai"], type: "embed", src: "https://www.decisionproblem.com/paperclips/",
     blurb: "Turn the whole universe into paperclips. Weirdly gripping.",
-    thumb: "assets/thumbs/paperclips.svg", icon: "📎", color: "#e0ded9",
+    icon: "📎", color: "#e0ded9",
   },
   {
     id: "cookie-clicker", title: "Cookie Clicker", cat: "Idle",
@@ -246,13 +231,13 @@ const CATALOG = [
     id: "candy-box-2", title: "Candy Box 2", cat: "Idle",
     tags: ["incremental", "adventure", "ascii"], type: "embed", src: "https://candybox2.github.io/",
     blurb: "A quirky incremental adventure that keeps unfolding. Eat the candies… or don't.",
-    thumb: "assets/thumbs/candy-box-2.svg", icon: "🍬", color: "#1a1220",
+    icon: "🍬", color: "#1a1220",
   },
   {
     id: "trimps", title: "Trimps", cat: "Idle",
     tags: ["incremental", "idle", "strategy"], type: "embed", src: "https://trimps.github.io/",
     blurb: "Deep idle strategy — breed Trimps, explore, and never stop growing.",
-    thumb: "assets/thumbs/trimps.svg", icon: "📈", color: "#12211a",
+    icon: "📈", color: "#12211a",
   },
   {
     id: "a-dark-room", title: "A Dark Room", cat: "Idle",
@@ -266,6 +251,6 @@ const CATALOG = [
     id: "qwop", title: "QWOP", cat: "Arcade",
     tags: ["ragdoll", "foddy", "hard", "running"], type: "link", src: "https://www.foddy.net/Athletics.html",
     blurb: "The infamous running game. Good luck. Opens on Foddy's site.",
-    thumb: "assets/thumbs/qwop.svg", icon: "🏃", color: "#222d40",
+    icon: "🏃", color: "#222d40",
   },
 ];
