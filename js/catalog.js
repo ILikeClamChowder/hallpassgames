@@ -61,9 +61,9 @@ const CATALOG = [
   },
   {
     id: "1v1-lol", title: "1v1.LOL", cat: "Shooter",
-    tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed",
-    src: "https://1v1-lol-online.github.io/file/",
-    blurb: "Build-and-blast third-person duels — the browser build-battle everyone knows.",
+    tags: ["build", "shooter", "battle", "fortnite", "1v1", "2v2"], type: "embed",
+    src: "https://2v2.io/",
+    blurb: "Build-and-blast third-person duels — live 1v1 & 2v2 build-battles online.",
     thumb: "assets/thumbs/1v1lol.jpg", icon: "🔫", color: "#243044", featured: true,
   },
   {
