@@ -62,9 +62,16 @@ const CATALOG = [
   {
     id: "1v1-lol", title: "1v1.LOL", cat: "Shooter",
     tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed",
-    src: "https://1v1.lol/",
+    src: "https://1v1-lol-online.github.io/file/",
     blurb: "Build-and-blast third-person duels — the browser build-battle everyone knows.",
     thumb: "assets/thumbs/1v1lol.jpg", icon: "🔫", color: "#243044", featured: true,
+  },
+  {
+    id: "shell-shockers", title: "Shell Shockers", cat: "Shooter",
+    tags: ["shooter", "fps", "multiplayer", "eggs", "io"], type: "embed",
+    src: "https://scrambled.world/",
+    blurb: "The egg-armed multiplayer FPS — crack rivals in fast free-for-all shootouts.",
+    thumb: "assets/thumbs/shell-shockers.jpg", icon: "🥚", color: "#3a2a12", featured: true,
   },
   {
     id: "paper-io", title: "Paper.io 2", cat: "io",
