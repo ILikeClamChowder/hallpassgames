@@ -127,6 +127,36 @@ const CATALOG = [
     blurb: "Slide tiles and merge your way up to the elusive 2048 tile.",
     thumb: "assets/thumbs/2048.jpg", icon: "🔢", color: "#e0a92a",
   },
+  {
+    id: "age-of-war", title: "Age of War", cat: "Arcade",
+    tags: ["strategy", "tug of war", "defense", "evolution", "flash"], type: "self",
+    blurb: "Defend your base and evolve through the ages to crush the enemy — the classic.",
+    thumb: "assets/thumbs/age-of-war.jpg", icon: "🏰", color: "#3a3020", featured: true,
+  },
+  {
+    id: "age-of-war-2", title: "Age of War 2", cat: "Arcade",
+    tags: ["strategy", "tug of war", "defense", "evolution", "flash"], type: "self",
+    blurb: "The sequel — more ages, more units, more mayhem across the battlefield.",
+    thumb: "assets/thumbs/age-of-war-2.jpg", icon: "🏰", color: "#33291a",
+  },
+  {
+    id: "learn-to-fly", title: "Learn to Fly", cat: "Arcade",
+    tags: ["launch", "upgrade", "penguin", "distance", "flash"], type: "self",
+    blurb: "Launch a penguin, earn cash, upgrade, and finally learn to fly.",
+    icon: "🐧", color: "#1a3a4a",
+  },
+  {
+    id: "1-on-1-soccer", title: "1 on 1 Soccer", cat: "2 Player",
+    tags: ["soccer", "sports", "2 player", "versus", "flash"], type: "self",
+    blurb: "Frantic one-button soccer duels — score before your rival does.",
+    icon: "⚽", color: "#1c3a24",
+  },
+  {
+    id: "bloxorz", title: "Bloxorz", cat: "Puzzle",
+    tags: ["blocks", "logic", "roll", "brain", "flash"], type: "self",
+    blurb: "Roll the block to the hole without falling off the edge. Fiendish.",
+    thumb: "assets/thumbs/bloxorz.jpg", icon: "🟫", color: "#20242e",
+  },
 
   // ---- .io / multiplayer ----
   {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Age of War 2</title>
+  <!-- Self-hosted clean wrapper: Ruffle (WASM Flash) plays the .swf. No site chrome. -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+    #stage { width: 100vw; height: 100vh; }
+    #stage > * { width: 100% !important; height: 100% !important; }
+  </style>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+  <div id="stage"></div>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", function () {
+      var r = window.RufflePlayer.newest();
+      var p = r.createPlayer();
+      document.getElementById("stage").appendChild(p);
+      p.load({ url: "https://schoolimpostor.github.io/flash-games/age-of-war-2.swf", autoplay: "on" });
+    });
+  </script>
+</body>
+</html>
