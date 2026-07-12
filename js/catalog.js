@@ -342,6 +342,12 @@ const CATALOG = [
     icon: "📎", color: "#e0ded9",
   },
   {
+    id: "potato-patter", title: "Potato Patter", cat: "Idle",
+    tags: ["clicker", "incremental", "idle", "original", "potato"], type: "self",
+    blurb: "Tap the spud, buy Idahoans, prestige for more — an original clicker by Tate Bell.",
+    thumb: "assets/thumbs/potato-patter.jpg", icon: "🥔", color: "#3a2a16", featured: true,
+  },
+  {
     id: "cookie-clicker", title: "Cookie Clicker", cat: "Idle",
     tags: ["incremental", "clicker"], type: "link", src: "https://orteil.dashnet.org/cookieclicker/",
     blurb: "Bake absurd numbers of cookies. Opens on the official site.",
