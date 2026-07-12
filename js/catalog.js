@@ -98,6 +98,36 @@ const CATALOG = [
     thumb: "assets/thumbs/rooftop-snipers.jpg", icon: "🎯", color: "#33263f",
   },
 
+  // ---- more triplereddd classics ----
+  {
+    id: "slope", title: "Slope", cat: "Arcade",
+    tags: ["endless", "3d", "ball", "runner", "reflex"], type: "embed",
+    src: "https://cyamanz.github.io/play/slope/index.html",
+    blurb: "Race a ball down an endless neon slope — one wrong move and you're gone.",
+    icon: "🎿", color: "#0a0f1e", featured: true,
+  },
+  {
+    id: "big-tower-tiny-square", title: "Big Tower Tiny Square", cat: "Arcade",
+    tags: ["platformer", "precision", "skill", "tower"], type: "embed",
+    src: "https://bigtowertinysquare.github.io/",
+    blurb: "Climb a brutal precision-platformer tower to rescue your Pineapple.",
+    thumb: "assets/thumbs/big-tower-tiny-square.jpg", icon: "🟧", color: "#2a1430",
+  },
+  {
+    id: "doodle-jump", title: "Doodle Jump", cat: "Arcade",
+    tags: ["jump", "endless", "mobile", "classic"], type: "embed",
+    src: "https://cyamanz.github.io/play/doodle-jump/index.html",
+    blurb: "Bounce ever higher on wobbly platforms — the mobile classic.",
+    thumb: "assets/thumbs/doodle-jump.jpg", icon: "🟢", color: "#1c2a3a",
+  },
+  {
+    id: "2048", title: "2048", cat: "Puzzle",
+    tags: ["numbers", "slide", "brain", "merge"], type: "embed",
+    src: "https://ilikeclamchowder.github.io/2048/",
+    blurb: "Slide tiles and merge your way up to the elusive 2048 tile.",
+    thumb: "assets/thumbs/2048.jpg", icon: "🔢", color: "#e0a92a",
+  },
+
   // ---- .io / multiplayer ----
   {
     id: "krunker", title: "Krunker", cat: "Shooter",
@@ -180,12 +210,6 @@ const CATALOG = [
     tags: ["combine", "elements", "discovery", "relaxing"], type: "embed", src: "https://littlealchemy2.com/",
     blurb: "Combine elements to discover hundreds more. Start with earth, air, fire, water.",
     thumb: "assets/thumbs/little-alchemy-2.jpg", icon: "⚗️", color: "#5a1a4a",
-  },
-  {
-    id: "untrusted", title: "Untrusted", cat: "Puzzle",
-    tags: ["coding", "javascript", "escape"], type: "embed", src: "https://alexnisnevich.github.io/untrusted/",
-    blurb: "Escape each level by rewriting its JavaScript. Genius.",
-    icon: "💻", color: "#0e140e",
   },
 
   // ---- sandbox ----
