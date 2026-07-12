@@ -62,7 +62,7 @@ const CATALOG = [
   {
     id: "1v1-lol", title: "1v1.LOL", cat: "Shooter",
     tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed",
-    src: "https://cyamanz.github.io/play/1v1-lol/index.html",
+    src: "https://1v1.lol/",
     blurb: "Build-and-blast third-person duels — the browser build-battle everyone knows.",
     thumb: "assets/thumbs/1v1lol.jpg", icon: "🔫", color: "#243044", featured: true,
   },
@@ -104,7 +104,7 @@ const CATALOG = [
     tags: ["endless", "3d", "ball", "runner", "reflex"], type: "embed",
     src: "https://cyamanz.github.io/play/slope/index.html",
     blurb: "Race a ball down an endless neon slope — one wrong move and you're gone.",
-    icon: "🎿", color: "#0a0f1e", featured: true,
+    thumb: "assets/thumbs/slope.jpg", icon: "🎿", color: "#0a0f1e", featured: true,
   },
   {
     id: "big-tower-tiny-square", title: "Big Tower Tiny Square", cat: "Arcade",
@@ -143,13 +143,13 @@ const CATALOG = [
     id: "learn-to-fly", title: "Learn to Fly", cat: "Arcade",
     tags: ["launch", "upgrade", "penguin", "distance", "flash"], type: "self",
     blurb: "Launch a penguin, earn cash, upgrade, and finally learn to fly.",
-    icon: "🐧", color: "#1a3a4a",
+    thumb: "assets/thumbs/learn-to-fly.jpg", icon: "🐧", color: "#1a3a4a",
   },
   {
     id: "1-on-1-soccer", title: "1 on 1 Soccer", cat: "2 Player",
     tags: ["soccer", "sports", "2 player", "versus", "flash"], type: "self",
     blurb: "Frantic one-button soccer duels — score before your rival does.",
-    icon: "⚽", color: "#1c3a24",
+    thumb: "assets/thumbs/1-on-1-soccer.jpg", icon: "⚽", color: "#1c3a24",
   },
   {
     id: "bloxorz", title: "Bloxorz", cat: "Puzzle",
@@ -201,7 +201,7 @@ const CATALOG = [
     id: "dino-run", title: "Dino Run", cat: "Arcade",
     tags: ["runner", "chrome", "t-rex", "endless"], type: "embed", src: "https://wayou.github.io/t-rex-runner/",
     blurb: "The offline Chrome dino — jump the cacti, chase a high score.",
-    icon: "🦖", color: "#232830",
+    thumb: "assets/thumbs/dino-run.png", icon: "🦖", color: "#232830",
   },
   {
     id: "ztype", title: "ZType", cat: "Arcade",
