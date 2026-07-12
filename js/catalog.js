@@ -137,7 +137,7 @@ const CATALOG = [
     id: "age-of-war-2", title: "Age of War 2", cat: "Arcade",
     tags: ["strategy", "tug of war", "defense", "evolution", "flash"], type: "self",
     blurb: "The sequel — more ages, more units, more mayhem across the battlefield.",
-    thumb: "assets/thumbs/age-of-war-2.jpg", icon: "🏰", color: "#33291a",
+    thumb: "assets/thumbs/age-of-war-2-v2.jpg", icon: "🏰", color: "#33291a",
   },
   {
     id: "learn-to-fly", title: "Learn to Fly", cat: "Arcade",
@@ -253,7 +253,7 @@ const CATALOG = [
     id: "minecraft-152", title: "Minecraft 1.5.2", cat: "Sandbox",
     tags: ["build", "blocks", "mojang", "survival"], type: "embed", src: "https://sd592g.github.io/zj684od4lfg/",
     blurb: "Full Minecraft 1.5.2 in the browser — survival, crafting, the works.",
-    thumb: "assets/thumbs/minecraft-152.jpg", icon: "⛏️", color: "#3a2a18",
+    thumb: "assets/thumbs/minecraft-152-v2.jpg", icon: "⛏️", color: "#3a2a18",
   },
   {
     id: "sandspiel", title: "Sandspiel", cat: "Sandbox",
