@@ -28,7 +28,7 @@ const CATALOG = [
     id: "getaway-shootout", title: "Getaway Shootout", cat: "2 Player",
     tags: ["shooter", "party", "2 player", "ragdoll", "race"], type: "self",
     blurb: "Race to the getaway by any means — a chaotic 2-player ragdoll shooter.",
-    icon: "🔫", color: "#2a3550", featured: true,
+    thumb: "assets/thumbs/getaway-shootout.jpg", icon: "🔫", color: "#2a3550", featured: true,
   },
   {
     id: "ducklife", title: "Duck Life 4", cat: "Arcade",
@@ -42,14 +42,14 @@ const CATALOG = [
     tags: ["car", "drift", "racing", "3d", "tuning"], type: "embed",
     src: "https://cyamanz.github.io/play/drift-hunters/index.html",
     blurb: "Tune real cars and rack up points sliding around detailed 3D tracks.",
-    icon: "🏎️", color: "#2c2430", featured: true,
+    thumb: "assets/thumbs/drift-hunters.jpg", icon: "🏎️", color: "#2c2430", featured: true,
   },
   {
     id: "smash-karts", title: "Smash Karts", cat: "io",
     tags: ["kart", "battle", "io", "multiplayer", "3d"], type: "embed",
     src: "https://smashkarts.io/",
     blurb: "Blast rivals in a 3D kart battle arena. Grab weapons, don't get smashed.",
-    icon: "🏎️", color: "#3a2a12", featured: true,
+    thumb: "assets/thumbs/smash-karts.jpg", icon: "🏎️", color: "#3a2a12", featured: true,
   },
 
   // ---- reliable standalone hits (frame anywhere — no registration needed) ----
@@ -57,45 +57,45 @@ const CATALOG = [
     id: "slither", title: "Slither.io", cat: "io",
     tags: ["snake", "io", "multiplayer", "classic"], type: "embed", src: "https://slither.io/",
     blurb: "Grow the longest snake on the server. Cut people off, eat their glow.",
-    icon: "🐍", color: "#12242a", featured: true,
+    thumb: "assets/thumbs/slither.jpg", icon: "🐍", color: "#12242a", featured: true,
   },
   {
     id: "1v1-lol", title: "1v1.LOL", cat: "Shooter",
     tags: ["build", "shooter", "battle", "fortnite", "1v1"], type: "embed",
     src: "https://cyamanz.github.io/play/1v1-lol/index.html",
     blurb: "Build-and-blast third-person duels — the browser build-battle everyone knows.",
-    icon: "🔫", color: "#243044", featured: true,
+    thumb: "assets/thumbs/1v1lol.jpg", icon: "🔫", color: "#243044", featured: true,
   },
   {
     id: "paper-io", title: "Paper.io 2", cat: "io",
     tags: ["io", "territory", "multiplayer", "arcade"], type: "embed", src: "https://paper-io.com/",
     blurb: "Claim the map by drawing loops — just don't let anyone cross your tail.",
-    icon: "🟦", color: "#141b28",
+    thumb: "assets/thumbs/paper-io.jpg", icon: "🟦", color: "#141b28",
   },
   {
     id: "territorial", title: "Territorial.io", cat: "io",
     tags: ["strategy", "io", "risk", "map", "conquer"], type: "embed", src: "https://territorial.io/",
     blurb: "Simple, ruthless map conquest — outnumber every neighbor and take the world.",
-    icon: "🗺️", color: "#0f1a24",
+    thumb: "assets/thumbs/territorial.png", icon: "🗺️", color: "#0f1a24",
   },
   {
     id: "digdig", title: "Digdig.io", cat: "io",
     tags: ["io", "dig", "multiplayer", "arcade"], type: "embed", src: "https://digdig.io/",
     blurb: "Dig tunnels, grow bigger, and swallow smaller diggers underground.",
-    icon: "⛏️", color: "#2e1e10",
+    thumb: "assets/thumbs/digdig.png", icon: "⛏️", color: "#2e1e10",
   },
   {
     id: "pacman", title: "Pac-Man", cat: "Arcade",
     tags: ["classic", "arcade", "maze", "retro"], type: "embed", src: "https://cyamanz.github.io/play/pacman/index.html",
     blurb: "The maze-chase arcade legend — clear the dots, dodge the ghosts.",
-    icon: "🟡", color: "#05060f",
+    thumb: "assets/thumbs/pacman.jpg", icon: "🟡", color: "#05060f",
   },
   {
     id: "rooftop-snipers", title: "Rooftop Snipers", cat: "2 Player",
     tags: ["shooter", "2 player", "party", "physics"], type: "embed",
     src: "https://cyamanz.github.io/play/rooftop-snipers/index.html",
     blurb: "One button, two players, one goal — knock your rival off the roof.",
-    icon: "🎯", color: "#33263f",
+    thumb: "assets/thumbs/rooftop-snipers.jpg", icon: "🎯", color: "#33263f",
   },
 
   // ---- .io / multiplayer ----
@@ -109,7 +109,7 @@ const CATALOG = [
     id: "diep", title: "Diep.io", cat: "io",
     tags: ["io", "tanks", "shooter", "multiplayer", "upgrade"], type: "embed", src: "https://diep.io/",
     blurb: "Upgrade your tank, farm shapes, and take down the leaderboard.",
-    icon: "🔺", color: "#2b333d",
+    thumb: "assets/thumbs/diep.png", icon: "🔺", color: "#2b333d",
   },
   {
     id: "zombsroyale", title: "ZombsRoyale.io", cat: "io",
@@ -199,13 +199,13 @@ const CATALOG = [
     id: "minecraft-classic", title: "Minecraft Classic", cat: "Sandbox",
     tags: ["build", "blocks", "mojang"], type: "embed", src: "https://classic.minecraft.net/",
     blurb: "The original Minecraft, free from Mojang. Build anything.",
-    icon: "⛏️", color: "#151a26", featured: true,
+    thumb: "assets/thumbs/minecraft-classic.jpg", icon: "⛏️", color: "#151a26", featured: true,
   },
   {
     id: "minecraft-152", title: "Minecraft 1.5.2", cat: "Sandbox",
     tags: ["build", "blocks", "mojang", "survival"], type: "embed", src: "https://sd592g.github.io/zj684od4lfg/",
     blurb: "Full Minecraft 1.5.2 in the browser — survival, crafting, the works.",
-    icon: "⛏️", color: "#3a2a18",
+    thumb: "assets/thumbs/minecraft-152.jpg", icon: "⛏️", color: "#3a2a18",
   },
   {
     id: "sandspiel", title: "Sandspiel", cat: "Sandbox",
