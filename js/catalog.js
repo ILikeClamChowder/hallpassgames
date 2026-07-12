@@ -165,6 +165,71 @@ const CATALOG = [
     thumb: "assets/thumbs/bloxorz.jpg", icon: "🟫", color: "#20242e",
   },
 
+  // ---- arcade / racing / skill classics ----
+  {
+    id: "moto-x3m", title: "Moto X3M", cat: "Racing",
+    tags: ["bike", "stunt", "racing", "obstacle", "time trial"], type: "embed",
+    src: "https://cyamanz.github.io/play/motox3m/",
+    blurb: "Blast through explosive obstacle courses on a dirt bike — beat the clock, nail the flips.",
+    thumb: "assets/thumbs/moto-x3m.jpg", icon: "🏍️", color: "#3a2a12", featured: true,
+  },
+  {
+    id: "run-3", title: "Run 3", cat: "Arcade",
+    tags: ["runner", "space", "endless", "skill", "platform"], type: "embed",
+    src: "https://cyamanz.github.io/play/run3/",
+    blurb: "Sprint and leap through crumbling tunnels in space — don't fall into the void.",
+    thumb: "assets/thumbs/run-3.jpg", icon: "🌌", color: "#1a1440", featured: true,
+  },
+  {
+    id: "vex-3", title: "Vex 3", cat: "Action",
+    tags: ["platformer", "parkour", "stickman", "obstacle", "skill"], type: "embed",
+    src: "https://cyamanz.github.io/play/vex-3/",
+    blurb: "A brutal stickman parkour gauntlet of saws, spikes and split-second jumps.",
+    thumb: "assets/thumbs/vex-3.jpg", icon: "🏃", color: "#1c2630",
+  },
+  {
+    id: "vex-4", title: "Vex 4", cat: "Action",
+    tags: ["platformer", "parkour", "stickman", "obstacle", "skill"], type: "embed",
+    src: "https://cyamanz.github.io/play/vex-4/",
+    blurb: "More traps, more acts — the stickman parkour series at its most devious.",
+    thumb: "assets/thumbs/vex-4.jpg", icon: "🏃", color: "#22303a",
+  },
+  {
+    id: "happy-wheels", title: "Happy Wheels", cat: "Arcade",
+    tags: ["ragdoll", "physics", "obstacle", "gore", "bike"], type: "embed",
+    src: "https://cyamanz.github.io/play/happy-wheels/",
+    blurb: "The infamous ragdoll obstacle course — survive the traps, or don't. Usually don't.",
+    thumb: "assets/thumbs/happy-wheels.jpg", icon: "🦽", color: "#2a1414",
+  },
+  {
+    id: "cut-the-rope", title: "Cut the Rope", cat: "Puzzle",
+    tags: ["physics", "puzzle", "rope", "candy", "logic"], type: "embed",
+    src: "https://cyamanz.github.io/play/cut-the-rope/",
+    blurb: "Slice ropes to feed candy to Om Nom — a physics puzzle classic.",
+    thumb: "assets/thumbs/cut-the-rope.jpg", icon: "🍬", color: "#1c2e14",
+  },
+  {
+    id: "cubefield", title: "Cubefield", cat: "Arcade",
+    tags: ["reflex", "endless", "dodge", "retro", "skill"], type: "embed",
+    src: "https://cyamanz.github.io/play/cubefield/",
+    blurb: "Steer through an endless field of blocks at breakneck speed. One touch and it's over.",
+    thumb: "assets/thumbs/cubefield.jpg", icon: "🔻", color: "#141820",
+  },
+  {
+    id: "drift-boss", title: "Drift Boss", cat: "Racing",
+    tags: ["drift", "one button", "endless", "car", "timing"], type: "embed",
+    src: "https://cyamanz.github.io/play/drift-boss/",
+    blurb: "One click to drift — time each turn perfectly and keep the car on the road.",
+    thumb: "assets/thumbs/drift-boss.jpg", icon: "🚗", color: "#20182e",
+  },
+  {
+    id: "basketball-stars", title: "Basketball Stars", cat: "2 Player",
+    tags: ["basketball", "sports", "2 player", "versus", "arcade"], type: "embed",
+    src: "https://cyamanz.github.io/play/basketball-stars/",
+    blurb: "Fast 1-on-1 hoops — dunk, steal and drain threes solo or against a friend.",
+    thumb: "assets/thumbs/basketball-stars.jpg", icon: "🏀", color: "#2e1c10",
+  },
+
   // ---- .io / multiplayer ----
   {
     id: "krunker", title: "Krunker", cat: "Shooter",
