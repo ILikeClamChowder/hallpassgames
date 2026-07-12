@@ -35,7 +35,7 @@ const CATALOG = [
     tags: ["duck", "rpg", "race", "train", "kids"], type: "embed",
     src: "https://ikyih.github.io/DuckLife4/",
     blurb: "Train your duckling to run, fly and swim its way to championship glory.",
-    icon: "🦆", color: "#2f7d4f", featured: true,
+    thumb: "assets/thumbs/ducklife.jpg", icon: "🦆", color: "#2f7d4f", featured: true,
   },
   {
     id: "drift-hunters", title: "Drift Hunters", cat: "Racing",
