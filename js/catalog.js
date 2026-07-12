@@ -144,12 +144,6 @@ const CATALOG = [
     icon: "🦖", color: "#232830",
   },
   {
-    id: "astray", title: "Astray", cat: "Arcade",
-    tags: ["maze", "3d", "marble"], type: "embed", src: "https://wwwtyro.github.io/Astray/",
-    blurb: "Tilt a marble through a slick 3D maze.",
-    icon: "🌀", color: "#141c1e",
-  },
-  {
     id: "ztype", title: "ZType", cat: "Arcade",
     tags: ["typing", "shooter", "space", "words"], type: "embed", src: "https://zty.pe/",
     blurb: "Type the words to blast incoming ships. Fast fingers win.",

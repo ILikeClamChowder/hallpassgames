@@ -61,24 +61,25 @@
     if (!nav || document.getElementById("disguise-btn")) return;
     const style = document.createElement("style");
     style.textContent =
-      "#disguise-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin-left:4px;" +
+      "#disguise-btn{display:inline-flex;align-items:center;gap:7px;height:34px;margin-left:4px;padding:0 14px;" +
       "border-radius:999px;background:var(--ground-2,#211812);border:1px solid var(--line,#3a2a22);color:var(--muted,#b39c92);" +
-      "cursor:pointer;transition:color .15s,background .15s,border-color .15s;padding:0;}" +
+      "font-weight:600;font-size:.9rem;cursor:pointer;transition:color .15s,background .15s,border-color .15s;}" +
       "#disguise-btn:hover{color:var(--text,#f6ede8);border-color:var(--line-2,#4a362c);}" +
-      "#disguise-btn[aria-pressed=true]{color:#67a8ff;border-color:#67a8ff;}" +
-      "#disguise-btn svg{width:17px;height:17px;}";
+      "#disguise-btn[aria-pressed=true]{color:#67a8ff;border-color:#67a8ff;background:rgba(103,168,255,.1);}" +
+      "#disguise-btn svg{width:16px;height:16px;flex:none;}";
     document.head.appendChild(style);
 
     const btn = document.createElement("button");
     btn.id = "disguise-btn";
     btn.type = "button";
-    btn.title = "Quick disguise — makes this tab look like schoolwork (or press ` )";
+    btn.title = "Disguise this tab to look like schoolwork (or press ` )";
     btn.setAttribute("aria-label", "Disguise tab");
-    // incognito-glasses glyph
+    // incognito-glasses glyph + visible label
     btn.innerHTML =
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
       '<path d="M2 12h20"/><path d="M5 12c0-1 .5-2 2-2h2c1.5 0 2 1 2 2a2 2 0 01-4 0"/>' +
-      '<path d="M13 12c0-1 .5-2 2-2h2c1.5 0 2 1 2 2a2 2 0 01-4 0"/></svg>';
+      '<path d="M13 12c0-1 .5-2 2-2h2c1.5 0 2 1 2 2a2 2 0 01-4 0"/></svg>' +
+      '<span>Disguise</span>';
     btn.addEventListener("click", cycle);
     nav.appendChild(btn);
   }
