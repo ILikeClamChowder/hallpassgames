@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Learn to Fly</title>
+  <!-- Self-hosted clean wrapper: Ruffle (WASM Flash emulator) plays the .swf
+       from the Internet Archive. No third-party site chrome. -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+    #stage { width: 100vw; height: 100vh; }
+    #stage > * { width: 100% !important; height: 100% !important; }
+  </style>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+  <div id="stage"></div>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", function () {
+      var ruffle = window.RufflePlayer.newest();
+      var player = ruffle.createPlayer();
+      document.getElementById("stage").appendChild(player);
+      player.load({
+        url: "https://archive.org/download/learn2fly_coolmathcurse/learn2fly_coolmathcurse.swf",
+        autoplay: "on"
+      });
+    });
+  </script>
+</body>
+</html>
