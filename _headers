@@ -1,0 +1,6 @@
+# pygbag game bundles fetch a fixed-name .tar.gz with no cache-buster,
+# so force revalidation to avoid serving a stale bundle after a rebuild.
+/games/slap-marine/*
+  Cache-Control: no-cache
+/games/farty-mc-fly/*
+  Cache-Control: no-cache
