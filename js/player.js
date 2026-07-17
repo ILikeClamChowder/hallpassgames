@@ -68,6 +68,12 @@
     s.textContent = JSON.stringify(ld);
     document.head.appendChild(s);
   })();
+  // Self-hosted games render at a fixed native size; match the stage to that
+  // aspect ratio so a fixed-canvas game (e.g. pygbag 16:9) letterboxes cleanly
+  // inside the default 16:10 stage instead of stretching. Ignored in fullscreen,
+  // where the frame is sized to fill the screen (both dimensions are definite).
+  if (game.ar) frameWrap.style.aspectRatio = game.ar;
+
   frame.src = game.type === "embed" ? game.src : `games/${game.id}/index.html?v=52`;
   if (game.type === "embed") {
     tipEl.textContent = "Loaded from the game's official free site.";
