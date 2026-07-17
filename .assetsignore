@@ -1,0 +1,12 @@
+# Files here are NOT uploaded to Cloudflare as served assets.
+# wrangler deploy scans the whole repo (assets.directory = ".") and rejects any
+# single file over 25 MiB. Cloudflare shallow-clones the repo into one big
+# .git/objects/pack/*.pack that can exceed that limit, so exclude .git and other
+# non-site files.
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+node_modules
+*.log
+README.md
