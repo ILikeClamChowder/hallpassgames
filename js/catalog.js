@@ -345,19 +345,19 @@ const CATALOG = [
     id: "potato-patter", title: "Potato Patter", cat: "Idle",
     tags: ["clicker", "incremental", "idle", "original", "potato"], type: "self",
     blurb: "Tap the spud, buy Idahoans, prestige for more — an original clicker by Tate Bell.",
-    thumb: "assets/thumbs/potato-patter.jpg", icon: "🥔", color: "#3a2a16", featured: true,
+    thumb: "assets/thumbs/potato-patter.jpg", icon: "🥔", color: "#3a2a16",
   },
   {
     id: "slap-marine", title: "Slap-Marine", cat: "Action",
     tags: ["survival", "underwater", "waves", "action", "original"], type: "self",
     blurb: "Dive deep and slap your way through endless swarms of fish — an original underwater survival brawler by Tate Bell.",
-    thumb: "assets/thumbs/slap-marine.jpg", icon: "🤿", color: "#12283a", featured: true,
+    thumb: "assets/thumbs/slap-marine.jpg", icon: "🤿", color: "#12283a",
   },
   {
     id: "farty-mc-fly", title: "Farty McFly", cat: "Arcade",
     tags: ["platformer", "physics", "launch", "levels", "original"], type: "self",
     blurb: "Fart your way through stormy obstacle courses — an original momentum platformer by Tate Bell.",
-    thumb: "assets/thumbs/farty-mc-fly.jpg", icon: "💨", color: "#20202e", featured: true,
+    thumb: "assets/thumbs/farty-mc-fly.jpg", icon: "💨", color: "#20202e",
   },
   {
     id: "cookie-clicker", title: "Cookie Clicker", cat: "Idle",
