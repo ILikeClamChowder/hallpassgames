@@ -49,4 +49,15 @@
   <url><loc>https://hallpassgames.com/game.html?id=candy-box-2</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hallpassgames.com/game.html?id=trimps</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hallpassgames.com/game.html?id=a-dark-room</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- games that were live in the catalog but missing from the sitemap -->
+  <url><loc>https://hallpassgames.com/game.html?id=2048</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=age-of-war</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=age-of-war-2</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=slope</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=big-tower-tiny-square</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=doodle-jump</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=learn-to-fly</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=1-on-1-soccer</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hallpassgames.com/game.html?id=bloxorz</loc><lastmod>2026-07-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
