@@ -42,6 +42,8 @@ const CATALOG = [
     tags: ["car", "drift", "racing", "3d", "tuning"], type: "embed",
     src: "https://cyamanz.github.io/play/drift-hunters/index.html",
     blurb: "Tune real cars and rack up points sliding around detailed 3D tracks.",
+    about: "Drift Hunters is a 3D car-drifting game where you earn points by sliding real-world cars around detailed tracks, then spend your winnings tuning and upgrading your garage. Bigger, longer, higher-angle drifts build fatter score multipliers and more cash for your next build.",
+    howto: "Drive with the arrow keys or WASD, tap the handbrake (Space) to break traction and start a drift, then feather the throttle and countersteer to hold the slide. Bank your points in the shop to upgrade power, tires, and paint.",
     thumb: "assets/thumbs/drift-hunters.jpg", icon: "🏎️", color: "#2c2430", featured: true,
   },
   {
@@ -57,6 +59,8 @@ const CATALOG = [
     id: "slither", title: "Slither.io", cat: "io",
     tags: ["snake", "io", "multiplayer", "classic"], type: "embed", src: "https://slither.io/",
     blurb: "Grow the longest snake on the server. Cut people off, eat their glow.",
+    about: "Slither.io is a massively multiplayer take on classic Snake: you're a glowing worm sharing one huge arena with players worldwide, eating pellets to grow longer. Cut in front of a rival so their head hits your body and they burst into orbs you can gobble to grow even faster.",
+    howto: "Move with your mouse — your snake follows the cursor. Hold left-click or Space for a speed boost that costs a little length. Never let your head touch another snake, and try to trap bigger players into crossing your path.",
     thumb: "assets/thumbs/slither.jpg", icon: "🐍", color: "#12242a", featured: true,
   },
   {
@@ -64,6 +68,8 @@ const CATALOG = [
     tags: ["build", "shooter", "battle", "fortnite", "1v1", "2v2"], type: "embed",
     src: "https://2v2.io/",
     blurb: "Build-and-blast third-person duels — live 1v1 & 2v2 build-battles online.",
+    about: "2v2.io is a fast build-and-shoot arena for live 1v1 and 2v2 duels online: out-aim your opponent while throwing up instant ramps, walls, and floors for cover. It's the browser build-battle formula fans of 1v1.lol love, running on live servers against real players.",
+    howto: "Move with WASD, aim and fire with the mouse, and swap between your weapon and build pieces with the number keys or Q. Slam down a wall or ramp the moment you take fire, then push your edit-and-shoot advantage.",
     thumb: "assets/thumbs/2v2.webp", icon: "🔫", color: "#1a4a7a", featured: true,
   },
   {
@@ -111,6 +117,8 @@ const CATALOG = [
     tags: ["endless", "3d", "ball", "runner", "reflex"], type: "embed",
     src: "https://cyamanz.github.io/play/slope/index.html",
     blurb: "Race a ball down an endless neon slope — one wrong move and you're gone.",
+    about: "Slope is a high-speed 3D endless runner where you guide a rolling ball down a steep neon course, dodging obstacles and gaps while the speed keeps climbing. It's famous for its brutal difficulty and that 'just one more run' pull — every descent is randomly generated, so no two runs play the same.",
+    howto: "Steer with the Left and Right arrow keys (or A and D) to keep the ball on the track. Avoid the red blocks, don't roll off the edges, and survive as long as you can — it only gets faster.",
     thumb: "assets/thumbs/slope.jpg", icon: "🎿", color: "#0a0f1e", featured: true,
   },
   {
@@ -171,6 +179,8 @@ const CATALOG = [
     tags: ["bike", "stunt", "racing", "obstacle", "time trial"], type: "embed",
     src: "https://cyamanz.github.io/play/motox3m/",
     blurb: "Blast through explosive obstacle courses on a dirt bike — beat the clock, nail the flips.",
+    about: "Moto X3M is a time-trial dirt-bike game built around explosive, physics-driven obstacle courses. Flip through the air for a time bonus, thread past saws and swinging hazards, and shave every second off the clock to earn all three stars on a level.",
+    howto: "Press Up or W to accelerate, Down or S to brake and reverse, and Left/Right to lean and rotate in mid-air. Land your flips cleanly — bailing costs time, and the clock is everything.",
     thumb: "assets/thumbs/moto-x3m.jpg", icon: "🏍️", color: "#3a2a12", featured: true,
   },
   {
@@ -178,6 +188,8 @@ const CATALOG = [
     tags: ["runner", "space", "endless", "skill", "platform"], type: "embed",
     src: "https://cyamanz.github.io/play/run3/",
     blurb: "Sprint and leap through crumbling tunnels in space — don't fall into the void.",
+    about: "Run 3 is an endless space-runner where a little alien sprints and leaps through crumbling tunnels floating in the void. Jump the gaps, rotate the tunnel to run along its walls and ceiling, and get as deep as you can before a missing tile drops you into space.",
+    howto: "Use the Left and Right arrow keys to move and Space or Up to jump. Run onto a wall to spin the whole tunnel around you — using the sides is the key to crossing the biggest gaps.",
     thumb: "assets/thumbs/run-3.jpg", icon: "🌌", color: "#1a1440", featured: true,
   },
   {
@@ -199,6 +211,8 @@ const CATALOG = [
     tags: ["ragdoll", "physics", "obstacle", "gore", "bike"], type: "embed",
     src: "https://cyamanz.github.io/play/happy-wheels/",
     blurb: "The infamous ragdoll obstacle course — survive the traps, or don't. Usually don't.",
+    about: "Happy Wheels is the notorious ragdoll physics game where you pilot absurd characters through booby-trapped obstacle courses. Between the brutal traps and a giant library of user-made levels, just reaching the finish line in one piece is half the (gruesome) fun.",
+    howto: "Use the arrow keys to accelerate, brake, and lean your weight, and Space for your character's special move like ejecting. Balance carefully — one bad bump launches you straight into the spikes.",
     thumb: "assets/thumbs/happy-wheels.jpg", icon: "🦽", color: "#2a1414",
   },
   {
