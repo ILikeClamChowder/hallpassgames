@@ -4,6 +4,10 @@
   "name": "hallpass",
   "compatibility_date": "2026-07-08",
   "assets": {
-    "directory": "."
+    "directory": ".",
+    // Multi-page static site, NOT an SPA: serve a real 404 (with 404.html) for
+    // missing paths instead of returning index.html with a 200. The old behavior
+    // created soft-404s and made Google read sitemap.xml as HTML during deploys.
+    "not_found_handling": "404-page"
   }
 }
