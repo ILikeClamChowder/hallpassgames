@@ -30,7 +30,7 @@
 
   // ---- per-game SEO: keep meta/canonical/structured-data in sync with the loaded game ----
   (function seo() {
-    const pageUrl = "https://hallpassgames.com/game.html?id=" + encodeURIComponent(game.id);
+    const pageUrl = "https://hallpassgames.com/game?id=" + encodeURIComponent(game.id);
     // Target the high-intent "<game> unblocked" long-tail these pages actually rank for.
     const desc = ("Play " + game.title + " unblocked and free on Hall Pass — no downloads, no sign-up. " + (game.blurb || "")).replace(/\s+/g, " ").trim();
     // social previews need a raster at large-card size; SVG thumbs won't render on

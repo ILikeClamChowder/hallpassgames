@@ -8,12 +8,10 @@
     // Multi-page static site, NOT an SPA: serve a real 404 (with 404.html) for
     // missing paths instead of returning index.html with a 200. The old behavior
     // created soft-404s and made Google read sitemap.xml as HTML during deploys.
-    "not_found_handling": "404-page",
-    // Serve .html URLs directly (200) instead of 308-redirecting them to
-    // extension-less URLs. The sitemap + <link rel=canonical> both use the
-    // .html form, so the redirect made Google flag them "Page with redirect"
-    // (and contradicted the canonical). "none" keeps everything consistent on
-    // .html, which also matches the local python http.server used for dev.
-    "html_handling": "none"
+    "not_found_handling": "404-page"
+    // NOTE: html_handling is left at the Cloudflare default (auto-trailing-slash),
+    // which redirects /foo.html -> /foo. We lean INTO that: the sitemap and every
+    // <link rel=canonical> use the extension-less URLs (which serve 200), so
+    // Google indexes those directly and the .html forms just redirect to them.
   }
 }

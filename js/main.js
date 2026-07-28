@@ -28,7 +28,11 @@
       a.target = "_blank";
       a.rel = "noopener noreferrer";
     } else {
-      a.href = "game.html?id=" + encodeURIComponent(game.id);
+      // Use the clean (canonical) URL in production so Google isn't sent through a
+      // redirect; keep .html on localhost, where python http.server has no
+      // extension-less routing.
+      const local = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+      a.href = (local ? "game.html?id=" : "game?id=") + encodeURIComponent(game.id);
     }
 
     const art = document.createElement("div");
@@ -137,7 +141,7 @@
     const items = visible.map((g, i) => {
       const url = g.type === "link"
         ? g.src
-        : "https://hallpassgames.com/game.html?id=" + encodeURIComponent(g.id);
+        : "https://hallpassgames.com/game?id=" + encodeURIComponent(g.id);
       return {
         "@type": "ListItem",
         "position": i + 1,
