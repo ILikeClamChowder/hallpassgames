@@ -333,13 +333,13 @@ const CATALOG = [
     id: "minecraft-classic", title: "Minecraft Classic", cat: "Sandbox",
     tags: ["build", "blocks", "mojang"], type: "embed", src: "https://classic.minecraft.net/",
     blurb: "The original Minecraft, free from Mojang. Build anything.",
-    thumb: "assets/thumbs/minecraft-classic.jpg", icon: "⛏️", color: "#151a26", featured: true,
+    thumb: "assets/thumbs/minecraft-classic.jpg", icon: "⛏️", color: "#151a26",
   },
   {
     id: "minecraft-152", title: "Minecraft 1.5.2", cat: "Sandbox",
     tags: ["build", "blocks", "mojang", "survival"], type: "embed", src: "https://sd592g.github.io/zj684od4lfg/",
     blurb: "Full Minecraft 1.5.2 in the browser — survival, crafting, the works.",
-    thumb: "assets/thumbs/minecraft-152-v2.jpg", icon: "⛏️", color: "#3a2a18",
+    thumb: "assets/thumbs/minecraft-152-v3.png", icon: "⛏️", color: "#3a2a18", featured: true,
   },
   {
     id: "sandspiel", title: "Sandspiel", cat: "Sandbox",
